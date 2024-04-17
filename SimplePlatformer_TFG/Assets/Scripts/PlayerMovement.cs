@@ -134,15 +134,6 @@ public class PlayerMovement : MonoBehaviour
         }//EndOf IF/ELSE checking jumping conditions
     }//EndOf method Jump
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        /*
-         * Old Code
-        if(collision.gameObject.tag == "Ground") //This checks if we're colliding (touching) the ground object, given we gave it the "Ground" tag
-            grounded = true; //If so, "grounded" boolean will be set to True
-        */
-    }//EndOf Overwritten method OnCollisionEnter2D
-
     private bool isGrounded()
     {
         /*
@@ -162,5 +153,14 @@ public class PlayerMovement : MonoBehaviour
         //Quite smart if you ask me, we don't want that ray to just go Right of Left
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
-    }
+    }//EndOf private bool-returning method onWall
+
+    public bool canAttack()
+    {
+        //Say we want to be able to attack whie the player is not moving, on the ground and not on a wall
+        return 
+            horizontalInput == 0 
+            && isGrounded() 
+            && !onWall();
+    }//EndOf public bool-returning method canAttack
 }
