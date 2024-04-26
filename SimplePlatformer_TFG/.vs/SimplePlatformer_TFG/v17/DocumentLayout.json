@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy_sideways.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAowEoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T15:08:15.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T15:08:15.356Z"
             },
             {
               "$type": "Document",
@@ -93,7 +92,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Health.cs",
               "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Health\\Health.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAIwGgAAABiAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAIwGgAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T13:12:48.457Z",
               "EditorCaption": ""
