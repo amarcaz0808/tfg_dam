@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\scripts\\cratedestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cratedestroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\health\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\health\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_sideways.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\health\\healthcollectible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +39,8 @@
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "CrateDestroy.cs",
+              "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\CrateDestroy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CrateDestroy.cs",
+              "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\CrateDestroy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CrateDestroy.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:35:00.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HealthCollectible.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Health\\HealthCollectible.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\HealthCollectible.cs",
@@ -58,11 +75,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Health\\HealthCollectible.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T15:57:05.27Z"
+              "WhenOpened": "2024-04-24T15:57:05.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Enemy_sideways.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Enemy_sideways.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_sideways.cs",
@@ -70,11 +88,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Enemy_sideways.cs",
               "ViewState": "AQIAACEAAAAAAAAAAAAowEoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T15:08:15.356Z"
+              "WhenOpened": "2024-04-24T15:08:15.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Healthbar.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Health\\Healthbar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Healthbar.cs",
@@ -82,24 +101,25 @@
               "RelativeToolTip": "Assets\\Scripts\\Health\\Healthbar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T13:40:17.069Z"
+              "WhenOpened": "2024-04-24T13:40:17.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health\\Health.cs",
               "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Health\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Health\\Health.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAIwGgAAABiAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwGgAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T13:12:48.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Door.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
@@ -107,11 +127,12 @@
               "RelativeToolTip": "Assets\\Scripts\\Door.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T18:02:27.059Z"
+              "WhenOpened": "2024-04-23T18:02:27.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CameraController.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\CameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraController.cs",
@@ -123,31 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Projectile.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile.cs",
               "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\Projectile.cs",
               "RelativeToolTip": "Assets\\Scripts\\Projectile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABCAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCgAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:41:00.333Z"
+              "WhenOpened": "2024-04-17T17:41:00.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
               "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttack.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwCgAAAAtAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:11:31.138Z"
+              "WhenOpened": "2024-04-17T17:11:31.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\Scripts\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
