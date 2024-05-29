@@ -37,16 +37,19 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0) 
+        if (!PauseMenu.isPaused)
+        {
+            if (Input.GetMouseButton(0)
             && cooldownTimer > attackCooldown
             && playerMovement.canAttack())
-        {
-            // ^ IF Player hit the attack button, and enough time has passed since the last attack, AND they are able to attack
-            // v THEN Attack
-            Attack();
-        }//EndOf IF checking for a LeftClick AND for there to be enough cooldown for the attack
+            {
+                // ^ IF Player hit the attack button, and enough time has passed since the last attack, AND they are able to attack
+                // v THEN Attack
+                Attack();
+            }//EndOf IF checking for a LeftClick AND for there to be enough cooldown for the attack
 
-        cooldownTimer += Time.deltaTime; //Update the cooldown timer every frame, with a consistent per-second sum thanks to Time.deltaTime
+            cooldownTimer += Time.deltaTime; //Update the cooldown timer every frame, with a consistent per-second sum thanks to Time.deltaTime
+        }//EndOf IF fixing the error of shooting a fireball when game is paused
     }//EndOf method Update
 
     private void Attack()
