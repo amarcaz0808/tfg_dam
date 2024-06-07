@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\ui_controllers\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_controllers\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\ui_controllers\\uicontroller_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_controllers\\uicontroller_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\ui_controllers\\uicontroller_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_controllers\\uicontroller_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|d:\\repo_amarcaz0808_github\\tfg_dam\\simpleplatformer_tfg\\assets\\ui_controllers\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|solutionrelative:assets\\ui_controllers\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7CCD21C-3441-6E01-E6BC-4347DA948AC4}|Assembly-CSharp.csproj|D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\UI_Controllers\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Controllers\\PauseMenu.cs",
@@ -75,13 +75,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UIController_MainMenu.cs",
               "DocumentMoniker": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\UI_Controllers\\UIController_MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Controllers\\UIController_MainMenu.cs",
               "ToolTip": "D:\\repo_amarcaz0808_github\\tfg_dam\\SimplePlatformer_TFG\\Assets\\UI_Controllers\\UIController_MainMenu.cs",
               "RelativeToolTip": "Assets\\UI_Controllers\\UIController_MainMenu.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-20T10:18:30.713Z",
               "EditorCaption": ""
@@ -180,8 +180,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Projectile.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwCgAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:41:00.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T17:41:00.333Z"
             },
             {
               "$type": "Document",
@@ -193,8 +192,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerAttack.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwDMAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:11:31.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T17:11:31.138Z"
             },
             {
               "$type": "Document",

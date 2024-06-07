@@ -23,4 +23,9 @@ public class UIController_MainMenu : MonoBehaviour
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
     }//EndOf method Play
+
+    public void ExitGame()
+    {
+        Application.Quit(); //It really is THAT simple.
+    }//EndOf method ExitGame
 }
