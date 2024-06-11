@@ -416,6 +416,7 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+"Assets/UI_Controllers/DeathScreen.cs"
 "Assets/UI_Controllers/PauseMenu.cs"
 "Assets/UI_Controllers/UIController_MainMenu.cs"
 -langversion:9.0

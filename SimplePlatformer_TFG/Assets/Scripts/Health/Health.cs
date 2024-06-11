@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
     [Header("Health")] //This is merely for organizational purposes, it will separate different fields in "categories" in Unity, making it easier to see where everything is
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; } //Get it anywhere, set it privately
-    private bool dead; //Just to make sure the dying animation won't play twice
+    public static bool dead { get; set; } //Just to make sure the dying animation won't play twice
 
     [Header("iFrames")]
     //Against how I was getting used to organize and comment my code, after a Header the first field has to be either public or a SerializeField. No biggie tho!
@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        dead = false;
     }//EndOf method Awake
 
     // Start is called before the first frame update
