@@ -68,7 +68,7 @@ public class Health : MonoBehaviour
         {
             //Still alive!
             anim.SetTrigger("hurt");
-            //TODO - IFrames
+            //IFrames
             StartCoroutine(Invulnerability()); //Start this method in a separate thread
         }
         else

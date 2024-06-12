@@ -30,7 +30,7 @@ public class DeathScreen : MonoBehaviour
 
     private IEnumerator WaitABit()
     {
-        yield return new WaitForSeconds(3); //Wait a bit...
+        yield return new WaitForSeconds(2); //Wait a bit...
         deathScreen.SetActive(true); //Now set the menu true
     }//EndOf IEnumerator method WaitABit
 

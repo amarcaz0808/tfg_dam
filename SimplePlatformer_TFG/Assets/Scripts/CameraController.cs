@@ -42,8 +42,11 @@ public class CameraController : MonoBehaviour
         //transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPositionX, transform.position.y, transform.position.z), ref velocity, speed);
 
         /* PlayerTracker Camera */
-        transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z); //Set the camera's position to that of the player's, plus the horizontal lookAhead
-        lookAhead = Mathf.Lerp(lookAhead, (aheadDistance * player.localScale.x), cameraSpeed * Time.deltaTime); //Smoothly get the camera from the player's position to thet aheadDistance
+        if (!Health.dead)
+        {
+            transform.position = new Vector3(player.position.x + lookAhead, transform.position.y, transform.position.z); //Set the camera's position to that of the player's, plus the horizontal lookAhead
+            lookAhead = Mathf.Lerp(lookAhead, (aheadDistance * player.localScale.x), cameraSpeed * Time.deltaTime); //Smoothly get the camera from the player's position to thet aheadDistance
+        }
     }//EndOf method Update
 
     /* ROOM CAMERA */

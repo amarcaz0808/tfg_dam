@@ -374,6 +374,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.24f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/CrateDestroy.cs"
+"Assets/Scripts/DeathBarrier.cs"
 "Assets/Scripts/Door.cs"
 "Assets/Scripts/Enemy_sideways.cs"
 "Assets/Scripts/Health/Health.cs"
