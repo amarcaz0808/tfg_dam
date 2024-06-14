@@ -1,0 +1,10 @@
+Entrego:
+
+Un enlace al repositorio en Github de mi proyecto, código fuente y build del proyecto incluidos pero aparte.
+(https://github.com/amarcaz0808/tfg_dam)
+
+Un diario de desarrollo, ajeno a los requisitos pero que fui rellenando según avanzaba el desarrollo.
+
+La documentación solicitada.
+
+Y este mismo documento TXT explicando todo esto.
