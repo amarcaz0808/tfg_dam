@@ -421,6 +421,7 @@
 "Assets/UI_Controllers/DeathScreen.cs"
 "Assets/UI_Controllers/PauseMenu.cs"
 "Assets/UI_Controllers/UIController_MainMenu.cs"
+"Assets/UI_Controllers/WinScreen.cs"
 -langversion:9.0
 
 /deterministic

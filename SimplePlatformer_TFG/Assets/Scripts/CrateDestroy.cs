@@ -8,6 +8,9 @@ public class CrateDestroy : MonoBehaviour
      * ATTRIBUTES / GLOBAL VARIABLES
      **/
     private Animator animator;
+    private AudioSource audioSource;
+
+    [SerializeField] AudioClip breakSFX;
 
     /**
      * METHODS
@@ -16,6 +19,7 @@ public class CrateDestroy : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,9 @@ public class CrateDestroy : MonoBehaviour
         {
             //TODO - Set Animator
             animator.SetTrigger("Break");
+
+            audioSource.clip = breakSFX;
+            audioSource.Play();
         }//EndOf IF
     }//EndOf method OnTriggerEnter2D
 

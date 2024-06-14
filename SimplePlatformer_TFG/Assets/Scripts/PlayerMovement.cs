@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D body; //To be later used by all methods, potentially
     private Animator anim;
     private BoxCollider2D boxCollider;
+    private AudioSource audioSrc;
 
     //Primitive stuff
     //Serializing fields (attributes) make them editable in Unity directly, handy for testing purposes
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpPower; //speed value to alter the Player's jump power
     [SerializeField] private LayerMask groundLayer; //Another layer for the ground, it'll help us with all entity's physics and collisions
     [SerializeField] private LayerMask wallLayer; //Same as groundLayer, just checking for wall contact instead of the floor
+    [SerializeField] private AudioClip jumpSFX;
 
     private float wallJumpCooldown; //This will help us control how much the player will need to wait until making a walljump, as to avoid making it indefinitely
     private float defaultGravityScale; //To have the original gravityScale always in handy, later initialized as Player's RigidBody2D's GravityScale
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSrc = GetComponent<AudioSource>();
     }//EndOf method Start
 
     // Update is called once per frame
@@ -55,53 +57,57 @@ public class PlayerMovement : MonoBehaviour
          * Therefore, in this method we shall program everything we want to be able to happen while the game is running
          * Things like, player movement, health checks, overworld changes, characters talking to each other, etc.
          **/
-        //Make later calls to the horizontal input easier
-        horizontalInput = Input.GetAxis("Horizontal");
-
-        //Check player's moving right (interpreted as horizontalInput greater than Zero)
-        // ^ Which implies moving left is interpreted as horizontalInput less than Zero
-        if (horizontalInput > 0.01f)
-            //This will make the player face Right (--->)
-            transform.localScale = Vector2.one;
-        else if (horizontalInput < -0.01f)
-            //This will make the palyer face Left (<---)
-            transform.localScale = new Vector3(-1, 1, 1);
-        //EndOf IF/ELSE for where the player faces
-
-        //Set the Animator's parameters
-        anim.SetBool("run", horizontalInput != 0);
-        anim.SetBool("grounded", isGrounded());
-
-        //Manage the walljump mechanic
-        if(wallJumpCooldown > 0.2f)
+        
+        if (!Trophy.hasWon)
         {
-            //A Vector2 is basically what allows us to move an object in a 2-axis way, horizontal (x) and vertical (y)
-            //There exists a Vector3 and a Vector4, but those are for other kinds of games (3D, of course for the added axis of depth, and 4D, which is WAY out of our league right now)
-            //
-            //Now, to allow for horizontal movement, we want to set body's velocity a new Vector2, and registering the input for the X axis, the Horizontal one
-            body.velocity = new Vector2(horizontalInput * speed, body.velocity.y); //body's vertical velocity remains unchanged, we do not intend to alter it here
+            //Make later calls to the horizontal input easier
+            horizontalInput = Input.GetAxis("Horizontal");
 
-            if(onWall() && !isGrounded())
+            //Check player's moving right (interpreted as horizontalInput greater than Zero)
+            // ^ Which implies moving left is interpreted as horizontalInput less than Zero
+            if (horizontalInput > 0.01f)
+                //This will make the player face Right (--->)
+                transform.localScale = Vector2.one;
+            else if (horizontalInput < -0.01f)
+                //This will make the palyer face Left (<---)
+                transform.localScale = new Vector3(-1, 1, 1);
+            //EndOf IF/ELSE for where the player faces
+
+            //Set the Animator's parameters
+            anim.SetBool("run", horizontalInput != 0);
+            anim.SetBool("grounded", isGrounded());
+
+            //Manage the walljump mechanic
+            if (wallJumpCooldown > 0.2f)
             {
-                body.gravityScale = 0f; //If on wall AND jumping, deactivate gravity, so the player does not fall as quick (or at all) when pressing against a wall
-                body.velocity = Vector2.zero; //Reset the player's horizontal velocity to zero
+                //A Vector2 is basically what allows us to move an object in a 2-axis way, horizontal (x) and vertical (y)
+                //There exists a Vector3 and a Vector4, but those are for other kinds of games (3D, of course for the added axis of depth, and 4D, which is WAY out of our league right now)
+                //
+                //Now, to allow for horizontal movement, we want to set body's velocity a new Vector2, and registering the input for the X axis, the Horizontal one
+                body.velocity = new Vector2(horizontalInput * speed, body.velocity.y); //body's vertical velocity remains unchanged, we do not intend to alter it here
+
+                if (onWall() && !isGrounded())
+                {
+                    body.gravityScale = 0f; //If on wall AND jumping, deactivate gravity, so the player does not fall as quick (or at all) when pressing against a wall
+                    body.velocity = Vector2.zero; //Reset the player's horizontal velocity to zero
+                }
+                else
+                {
+                    body.gravityScale = defaultGravityScale; //Return to the original gravity scale prior to touching the wall
+                }//EndOf IF/ELSE checking the player is against a wall AND jumping
+
+                //Now, to check on the keys pressed, we add an IF-Statement which will trigger when the Spacebar key is pressed down ("KeyCode" is a convenient way to get all keyboard keys)
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    Jump(); //Moved the code that used to be here and inserted it inside a new method called "Jump", which we updated
+                            //Thanks to this, the "Update" method will be a little bit more readable, and this piece of code easier to edit and expand
+                }//EndOf IF
             }
             else
             {
-                body.gravityScale = defaultGravityScale; //Return to the original gravity scale prior to touching the wall
-            }//EndOf IF/ELSE checking the player is against a wall AND jumping
-
-            //Now, to check on the keys pressed, we add an IF-Statement which will trigger when the Spacebar key is pressed down ("KeyCode" is a convenient way to get all keyboard keys)
-            if (Input.GetKey(KeyCode.Space))
-            {
-                Jump(); //Moved the code that used to be here and inserted it inside a new method called "Jump", which we updated
-                        //Thanks to this, the "Update" method will be a little bit more readable, and this piece of code easier to edit and expand
-            }//EndOf IF
+                wallJumpCooldown += Time.deltaTime;
+            }//EndOf IF/ELSE for walljump
         }
-        else
-        {
-            wallJumpCooldown += Time.deltaTime;
-        }//EndOf IF/ELSE for walljump
     }//EndOf method Update
 
     private void Jump()
@@ -112,6 +118,8 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
             //Old Code //grounded = false; //While we're jumping, we're not on the ground
+            audioSrc.clip = jumpSFX;
+            audioSrc.Play();
         }else if (onWall() && !isGrounded())
         {
             if(horizontalInput == 0)

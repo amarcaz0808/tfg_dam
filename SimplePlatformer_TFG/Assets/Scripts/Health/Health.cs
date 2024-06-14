@@ -17,6 +17,11 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; } //Get it anywhere, set it privately
     public static bool dead { get; set; } //Just to make sure the dying animation won't play twice
 
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip dieSFX;
+    [SerializeField] private AudioClip healSFX;
+    [SerializeField] private AudioClip damageSFX;
+
     [Header("iFrames")]
     //Against how I was getting used to organize and comment my code, after a Header the first field has to be either public or a SerializeField. No biggie tho!
     [SerializeField] private float iFrameDuration; //For how long will the flashes take place
@@ -32,6 +37,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        audioSource = GetComponent<AudioSource>();
         dead = false;
     }//EndOf method Awake
 
@@ -68,6 +74,8 @@ public class Health : MonoBehaviour
         {
             //Still alive!
             anim.SetTrigger("hurt");
+            audioSource.clip = damageSFX;
+            audioSource.Play();
             //IFrames
             StartCoroutine(Invulnerability()); //Start this method in a separate thread
         }
@@ -78,6 +86,8 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
+                audioSource.clip = dieSFX;
+                audioSource.Play();
                 dead = true;
             }//EndOf IF checking bool dead == false
         }//EndOf IF/ELSE checking whether or not Player is dead
@@ -87,6 +97,8 @@ public class Health : MonoBehaviour
     {
         //Makes Player regain health, to be later elaborated on
         currentHealth = Mathf.Clamp(currentHealth + _healing, 0, startingHealth);
+        audioSource.clip = healSFX;
+        audioSource.Play();
     }//EndOf method RecoverHealth
 
     private IEnumerator Invulnerability()

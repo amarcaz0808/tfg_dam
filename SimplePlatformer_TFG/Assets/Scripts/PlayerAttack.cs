@@ -10,11 +10,13 @@ public class PlayerAttack : MonoBehaviour
     //Unity stuff
     private Animator anim;
     private PlayerMovement playerMovement;
+    private AudioSource audioSrc;
 
     //Primivite variables
     [SerializeField] private float attackCooldown; //Editable through Unity
     [SerializeField] private Transform firePoint; //The point from which the fireball projectile will be shot
     [SerializeField] private GameObject[] fireballs;
+    [SerializeField] private AudioClip fireballSound;
 
     private float cooldownTimer;
 
@@ -32,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         cooldownTimer = Mathf.Infinity;
+        audioSrc = GetComponent<AudioSource>();
     }//EndOf method Start
 
     // Update is called once per frame
@@ -39,13 +42,16 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!PauseMenu.isPaused)
         {
-            if (Input.GetMouseButton(0)
+            if ((Input.GetMouseButton(0) || Input.GetKey(KeyCode.B))
             && cooldownTimer > attackCooldown
             && playerMovement.canAttack())
             {
                 // ^ IF Player hit the attack button, and enough time has passed since the last attack, AND they are able to attack
                 // v THEN Attack
                 Attack();
+                //And make a sound while you're at it
+                audioSrc.clip = fireballSound;
+                audioSrc.Play();
             }//EndOf IF checking for a LeftClick AND for there to be enough cooldown for the attack
 
             cooldownTimer += Time.deltaTime; //Update the cooldown timer every frame, with a consistent per-second sum thanks to Time.deltaTime
